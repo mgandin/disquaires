@@ -1,9 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
-import { Hello } from "./Hello";
+import { Disquaires } from "./Disquaires";
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("example")
+    <Disquaires compiler="TypeScript" framework="React" />,
+    document.getElementById("app")
 );
