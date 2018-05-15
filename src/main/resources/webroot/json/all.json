@@ -1,11 +1,11 @@
 {"disquaires" : [{
     "id":1,
     "name":"Pop Culture",
-    "image":"pop.png"
+    "image":"./img/pop.png"
   },
   {
     "id":2,
     "name":"Souffle Continu",
-    "image":"souffle.png"
+    "image":"./img/souffle.jpg"
   }]
 }

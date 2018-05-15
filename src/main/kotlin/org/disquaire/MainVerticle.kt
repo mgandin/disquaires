@@ -24,12 +24,12 @@ class MainVerticle : AbstractVerticle() {
                         ctx.response().headers().add(HttpHeaders.CONTENT_TYPE, "application/json")
                         ctx.response().end(it.result().body())
                     }
-                };
+                }
             }
             route("/*").handler(StaticHandler.create())
             route("/js/*").handler(StaticHandler.create("js"))
             route("/json/*").handler(StaticHandler.create("json"))
-
+            route("/img/*").handler(StaticHandler.create("img"))
         }
 
         vertx.createHttpServer(

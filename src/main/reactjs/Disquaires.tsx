@@ -25,7 +25,7 @@ export class Disquaires extends React.Component<any, DisquairesState> {
     render() {
         return (
               <div className="disquaires">
-                {  this.state.disquaires.map(disquaire => <div>{disquaire.name}</div>)}
+                {  this.state.disquaires.map(disquaire => <div><div>{disquaire.name}</div><img src={disquaire.image} /></div>)}
               </div>
             )
     }
