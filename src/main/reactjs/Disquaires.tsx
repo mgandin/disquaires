@@ -24,9 +24,9 @@ export class Disquaires extends React.Component<any, DisquairesState> {
 
     render() {
         return (
-              <ul>
-                {  this.state.disquaires.map(disquaire => <li>{disquaire.name}</li>)}
-              </ul>
+              <div className="disquaires">
+                {  this.state.disquaires.map(disquaire => <div>{disquaire.name}</div>)}
+              </div>
             )
     }
 }
