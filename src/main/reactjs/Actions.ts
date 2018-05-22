@@ -1,14 +1,23 @@
-export const QUERY_DISQUAIRES = 'QUERY_DISQUAIRES';
-export type QUERY_DISQUAIRES = typeof QUERY_DISQUAIRES;
+​import { Action } from 'redux';
+import { Disquaire } from "./Disquaire"
 
-export interface QueryDisquaires {
-    type: QUERY_DISQUAIRES;
-};
 
-export type QueryAction = QueryDisquaires;
+export interface FetchPostsSuccess extends Action {
+  type: 'FETCH_SUCCESS';
+  payload: Disquaire[]
+}
 
-export function queryDisquaires(): QueryDisquaires {
-    return {
-        type: QUERY_DISQUAIRES
-    }
+export type Actions = FetchPostsSuccess;
+
+export function fetchDatas() : FetchPostsSuccess {
+   return {type: 'FETCH_SUCCESS', payload : [{
+                         "id":1,
+                         "name":"Pop Culture",
+                         "image":"./img/pop.png"
+                       },
+                       {
+                         "id":2,
+                         "name":"Souffle Continu",
+                         "image":"./img/souffle.jpg"
+                       }]}
 }
